@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129139358-1">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-129139358-1");
+
+    import AOS from "aos";
+    import "aos/dist/aos.css";
+
+    // init AOS animation
+    window.addEventListener("load", () => {
+      AOS.init({
+        duration: 1000,
+        offset: 100,
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () { AOS.refresh(); }, 500);
+    });
+
+  </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Kim Huynh</title>
+
+  <link rel="stylesheet" href="style copy.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
+  <!-- <link rel="icon" href="http://www.kimhuynh.net/favicon.ico?v=2" /> -->
+  <link rel="icon" href="logo.ico" />
+</head>
+
+<body>
+
+  <div id="all-the-top-stuff">
+    <div class="navigation">
+      <div class="nav-button float"><a href="https://www.kimhuynh.net/#work/">Work</a></div>
+      <div class="nav-button float"><a id="non-select" href="http://www.kimhuynh.net/play/">Play</a></div>
+      <div class="nav-button float"><a id="non-select" href="http://www.kimhuynh.net/about-me/">About</a></div>
+      <div class="nav-button float">
+        <a id="non-select" class="last-nav" href="https://goo.gl/7mjuQz" target="_blank">Resume</a>
+      </div>
+    </div>
+
+    <div class="logo">
+      <a href="http://www.kimhuynh.net"><img src="images/logo.svg" alt="Kim Huynh"></a>
+    </div>
+
+    <div class="header">
+      <img class="hero fadein" src="images/adobe hero.png">
+    </div>
+
+    <div class="headline">
+      <div data-aos="fade-down">
+        <div class="wrapper">
+          <img class="row-icon" src="images/adobe.png">
+        </div>
+        <div id="title">
+          <div>Adobe</div>
+        </div>
+      </div>
+
+      <div data-aos="fade-down" data-aos-delay="500" class="headline-2"> Redesigning & streamlining the way<br>
+        users build data viz</div>
+      <br /><br />
+
+      <div data-aos="fade-down" data-aos-delay="800">
+        <div class="half-row-2" style="padding-top: 40px;">
+
+          <div class="column-50">
+            <div class="subheader-33">Role</div>
+            <div class="body-33">
+              Lead designer (intern)
+            </div>
+          </div>
+          <div class="column-50">
+            <div class="subheader-33">Project scope</div>
+            <div class="body-33">
+              Redesign & new features
+            </div>
+          </div>
+        </div>
+
+        <div class="half-row-2" style="padding-top: 20px;">
+
+          <div class="column-50">
+            <div class="subheader-33">team</div>
+            <div class="body-33">
+              PM & engineering
+            </div>
+          </div>
+          <div class="column-50">
+            <div class="subheader-33">timeline</div>
+            <div class="body-33">
+              ~ 3 months
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div data-aos="fade" data-aos-delay="300" class="scroll-downs">
+      <div id="scroll" class="mousey">
+        <div class="scroller"></div>
+      </div>
+    </div>
+  </div>
+
+  <div data-aos="fade-down" class="intro-container">
+    <div class="intro-box">
+      <div style="font-family: 'Kollektif-Bold'; white-space: nowrap;"><span
+          style="display:inline-block; vertical-align: middle; margin-right:8px;"><img src="images/warning.png"
+            style="padding-top: 3px;"></span>Warning:</div>
+      <div id="tip-text">This project & case study were designed while I was still in university! Looking for more
+        recent work? Check out <span class="bold"><a href="http://www.kimhuynh.net/marketplace/" id="warning-link">my
+            latest case study.</a></span></div>
+      <a href="#prototypes" style="margin: auto;"><button class="skip-proto">See Recent Work</button></a>
+    </div>
+  </div>
+
+  <div style="margin: 0 10% 0 10%" id="parent">
+    <div>
+      <nav class="toc sticky">
+        <ul>
+          <li>
+            <a href="#overview">Overview</a>
+          </li>
+          <li>
+            <a href="#problems">problems</a>
+          </li>
+          <li style="line-height: 1.7;">
+            <a href="#background-research">background<br> <span style="padding-left: 14px;">research</span></a>
+          </li>
+          <li style="line-height: 1.7;">
+            <a href="#user-research">user research</a>
+          </li>
+          <li>
+            <a href="#ideation">ideation</a>
+          </li>
+          <li style="line-height: 1.7;">
+            <a href="#usability-testing">usability<br> <span style="padding-left: 14px;">testing</span></a>
+          </li>
+          <li>
+            <a href="#prototype">prototype</a>
+          </li>
+
+          <li>
+            <a href="#side-projects">side projects</a>
+          </li>
+
+          <li>
+            <a href="#next-steps">next steps</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="testing" style="padding-top: 15px;">
+        <div class="contents">
+          <section data-aos="fade-down" id="overview">
+            <h3>👀 OVERVIEW</h3>
+            <h2>
+              As an intern on the Adobe Analytics team, <br>
+              I spent my summer designing a <span class="highlight-text2">new & improved visualization builder.</span>
+            </h2>
+            <p>
+              As Adobe’s enterprise platform for real-time web analytics, Analytics features visualizations as a core
+              part of its
+              everyday user flow. For almost 3 months, I focused on creating an easier and faster way to <span
+                class="bold highlight-text-p">create data visualizations
+                without the complexity of manipulating a table</span>—plus a couple smaller projects on the side!
+            </p>
+            <div>
+              <a href="#prototype"><button class="skip-proto"
+                  style="color:black; border: 2px solid black; margin-top: 25px; margin-bottom: 10px;">Skip to
+                  Prototype</button></a>
+            </div>
+          </section>
+
+          <section data-aos="fade-down" id="problems">
+            <h3>🤔 PROBLEMS</h3>
+            <h2>
+              The new viz builder was designed to be <br>
+              a <span class="highlight-text2">table-less method</span> of making visualizations, <br>
+              & a <span class="highlight-text2">unified workflow</span> for all viz types.
+            </h2>
+            <p>This would solve 2 major problems:
+              <br>
+              <br>
+              <span class="bold">ONE.</span>
+              <br>Right now, <span class="bold highlight-text-p">the only way to make a visualization like a line or bar
+                chart is to create a Freeform Table first.</span>
+              A Freeform Table is great for doing a variety of complex functions, like breakdowns and filters. But even
+              if the user is
+              only interested in doing a really simple line chart, they still have to go through the hassle of making a
+              table. 
+              <!-- <div style="margin: 40px 0; background-color: #F6F6F6; height: 350px; width: 100%"></div> -->
+            <div class="half-row-2" style="flex-direction: column;">
+              <img class="img-33" src="images/graphic 1.png">
+
+            </div>
+
+            </p>
+            <p>For a novice user who isn't as familiar with how to make tables, or a user who just wants to quickly
+              create a
+              visualization they have in their head, this is really inconvenient. Analytics's competitors like Tableau
+              and Power BI
+              don't require users to make a table first, either.
+              <br>
+              <br>
+              <br>
+              <span class="bold">TWO.</span> <br>
+              Analytics offers a wide variety of visualizations, like line, bar, venn, histograms, etc. <span
+                class="bold highlight-text-p">But not all of these
+                visualizations are built in the same way.</span> While some charts like line, bar, scatter, and donut
+              are table-based (ie. need
+              a table to be built first), others like venn and histograms aren’t, and can be made straight out of the
+              box. There's no
+              indication of which build method you'll need until you drag and drop it a visualization into your
+              workspace.
+            </p>
+            <div class="half-row-2" style="flex-direction: column;">
+              <img class="img-33" src="images/graphic 2.png">
+
+            </div>
+            <p>On top of that, the current UI is inconsistent across even visualization types that don't need tables.
+              Here's just a handful of visualization builders in prod: </p>
+            <div class="half-row-2" style="flex-direction: column;">
+              <img class="img-33" style="padding: 40px 0 30px 0;" src="images/graphic 3 b.png">
+
+            </div>
+
+            <p>
+              The new viz builder should make the flow <span class="bold highlight-text-p">much more consistent,</span>
+              requiring no tables and bridging the gap between our
+              table- and non-table-based visualizations.
+            </p>
+          </section>
+
+          <section data-aos="fade-down" id="background-research">
+            <h3>🔍 BACKGROUND RESEARCH</h3>
+            <h2>
+              As a newbie to the data analysis world, <br>
+              my first step was doing some background research <span class="highlight-text2">on Analytics itself.</span>
+            </h2>
+            <p>
+              After watching a few Youtube videos and playing around in a sandbox project,
+              <span class="bold highlight-text-p">I made an extensive audit of all the different visualizations</span>
+              using Airtable. I documented how they were made, how they could be edited, any error messages that came
+              up, etc. 
+            </p>
+            <!-- <div class="half-row-2" style="flex-direction: column;">
+                              <img class="img-33" style="padding: 60px 0;" src="images/airtable 1.png">
+                            </div> -->
+
+            <div class="row-mocks" style="flex-direction: column; margin-top: 40px; margin-bottom: 40px;">
+              <img class="img-33" src="images/airtable 1.png">
+
+            </div>
+            <p>
+              Once I had a pulse on the current state of our platform, it was time to look externally at all our
+              competitors. Of the
+              popular visualization platforms, most didn’t need a table and worked purely on drag & drop—a category we
+              call “builder.”
+            </p>
+            <div class="half-row-2" style="flex-direction: column;">
+              <img class="img-33" src="images/competitors.png">
+            </div>
+            <p>
+              Then, <span class="bold highlight-text-p">I ran all of our table-less competitors through the same
+                criteria I used in the audit, looked at how we were doing
+                comparatively,</span> and <span class="bold highlight-text-p">put together some initial ideas</span> for
+              the cross-disciplinary team to explore as we got started on the
+              project.
+            </p>
+            <!-- <div class="half-row-2" style="flex-direction: column;">
+                                          <img class="img-33" style="padding: 60px 0;" src="images/airtable 2.png">
+                                        </div> -->
+
+            <div class="row-mocks" style="flex-direction: column; margin-top: 40px; margin-bottom: 40px;">
+              <img class="img-33" src="images/airtable 2.png">
+
+            </div>
+          </section>
+
+
+          <section data-aos="fade-down" id="user-research">
+            <h3>😊😄 USER RESEARCH</h3>
+            <h2>
+              Our next step was to interview Analytics users,<br>
+              diving into <span class="highlight-text2">what our different user archetypes would want</span> out of a
+              new viz builder.
+            </h2>
+            <p>We were looking to hear from 2 types of users:
+            <div class="half-row-2">
+              <img class="img-33" src="images/graphic 5.png">
+
+            </div>
+            </p>
+
+            <p>
+              While making data visualization creation more accessible for novice users was one of our goals, we also
+              wanted to make
+              this a feature that even our most advanced users would get some good use out of.
+              <br>
+              <br>
+              In our calls, we asked users about their experience making visualizations in the platform today and how
+              they might use a
+              table-less viz builder. They gave us great feedback!
+              <!-- <div class="half-row-2">
+                                                              <img class="img-33" style="padding: 60px 0;" src="images/user research.png">
+                                                            
+                                                            </div> -->
+
+            <div class="row-mocks" style="flex-direction: column; margin-top: 40px; margin-bottom: 40px;">
+              <img class="img-33" src="images/user research.png">
+
+            </div>
+            </p>
+            <p>
+              From a week of these calls, we learned that our users had 3 primary needs & wants:
+            </p>
+            <div class="half-row-2">
+              <img class="img-33" style="padding: 15px 0;" src="images/user research summary.png">
+
+            </div>
+            <p>
+              Or to summarize in a few short words, the new viz builder should be <span
+                class="bold highlight-text-p">easier, faster, & more robust!</span>
+            </p>
+          </section>
+
+          <section data-aos="fade-down" id="ideation">
+            <!-- <hr style="margin-bottom: 70px; height:0.5px;"> -->
+            <h3>💭 IDEATION</h3>
+            <h2>
+              I spent the next few weeks exploring <br>
+              <span class="bold highlight-text2">how to unify all the viz types</span> into one user flow <br>
+              & <span class="bold highlight-text2">where to house all of the existing features,</span> <br>
+              all within a simple, minimal interface.</span>
+            </h2>
+            <p>
+              I started exploring a bunch of different avenues for the design to go, using Analytics's existing drag &
+              drop
+              functionality as a base. I tried to think of ways the viz builder could work that would be the fastest,
+              prettiest, most
+              intuitive, and most consistent. 
+              <br>
+              <br>
+
+            </p>
+            <!-- <div class="half-row-2">
+              <img class="img-33" style="padding: 0 0;" src="images/whiteboarding.png">
+
+            </div> -->
+            <div class="row-mocks" style="flex-direction: column; margin-top: 0; margin-bottom: 0;">
+              <img class="img-33" style="padding: 0 0;" src="images/whiteboarding.png">
+
+            </div>
+
+
+            <!-- <div style="margin: 40px 0; background-color: #F6F6F6; height: 450px; width: 100%">
+            </div> -->
+
+            <p>
+              Considering the problems we were trying to address with viz builder and how many features the Freeform
+              Tables has, this
+              ended up being a pretty long exploratory phase (spanning 6 Adobe XD files for organization's sake!).
+              Here's just a
+              snapshot of a few early iterations:
+            </p>
+
+
+
+            <div class="row-mocks" style="flex-direction: column; margin-top: 40px; margin-bottom: 90px;">
+              <img class="img-33" style="padding: 0 0;" src="images/iterations 1.png">
+              <div class="title-mocks">
+                Iterations: Empty State
+              </div>
+              <div class="subtitle-mocks">
+                This is the state of the viz builder when it's first dragged into the workspace!
+                The biggest question was whether to have a "start screen" experience <span class="bold">(1 & 2),</span>
+                or to have users drag & drop directly into a chart <span class="bold">(3).</span>
+              </div>
+
+            </div>
+            <div class="row-mocks" style="flex-direction: column; margin-top: 40px; margin-bottom: 20px;">
+              <img class="img-33" style="padding: 0 0;" src="images/iterations 2b.png">
+              <div class="title-mocks">
+                Iterations: Filled State
+              </div>
+              <div class="subtitle-mocks">
+                Once the inputs of the viz are dropped in, it's a matter of storing them in an accessible way that lets
+                users easily modify them.
+                A few explorations included having a permanent section at the top of the builder <span
+                  class="bold">(1),</span> showing them on hover <span class="bold">(2),</span>
+                or storing them in a new right rail <span class="bold">(3).</span>
+              </div>
+
+            </div>
+            <p style="padding-top: 80px;">
+              During this process, I spent a lot of time brainstorming how to approach incorporating advanced functions into
+              a simple viz builder that was also approachable for non-professionals. Taking inspiration from how Analytics already uses microinteractions like drag & drop
+              as the foundation of its user experience, especially with tables, <span class="bold highlight-text-p">the new viz builder leaned heavily on those microinteractions too.</span>
+              <br>
+              <br>
+              In the end, the new designs were full of <span class="bold highlight-text-p">hover states,</span> using different <span class="bold highlight-text-p">drag & drop combinations</span> to perform different actions, and <span class="bold highlight-text-p">right click menus.</span>
+              
+
+            </p>
+
+          </section>
+
+
+
+
+          <section data-aos="fade-down" id="usability-testing">
+            <!-- <hr style="margin-bottom: 70px; height:0.5px;"> -->
+            <h3>👩‍🔬🧪️ USABILITY TESTING</h3>
+            <h2>
+              Our ideation was our best educated guess.<br>
+              Who better to give feedback on the final designs than users themselves?
+            </h2>
+            <p>
+              After many, many design reviews and xfn team meetings, we narrowed down all the iterations to a select few
+              for usability
+              testing. I created a short script of questions and a simplistic prototype, and together with my PM, we
+              started testing
+              the mocks with users.
+            </p>
+            <div class="row-mocks" style="flex-direction: column; margin-top: 40px; margin-bottom: 40px;">
+              <img class="img-33" src="images/usability testing.png">
+
+            </div>
+            <!-- <div class="half-row-2">
+            <img class="img-33" style="padding: 0 0;" src="images/usability testing.png">
+        
+          </div> -->
+
+
+
+            <p>
+              Thanks to their candid feedback, we were able to narrow down the designs and do some last tweaks before
+              landing on the
+              final test candidate!
+            </p>
+          </section>
+
+          <section data-aos="fade-down" id="prototype">
+            <!-- <hr style="margin-bottom: 70px; height:0.5px;"> -->
+            <h3>🖥️ PROTOTYPE</h3>
+            <h2>
+              Take a look at the prototype<br>
+              based on user feedback,<br>
+              & all its microinteractions.
+            </h2>
+            <p>
+              (Unfortunately, since I was an intern, I had no idea how to prototype drag & drop or hover despite these being the foundations of the experience, so it’s a very simple clickable
+              prototype with no
+              fancy animated interactions.)
+            </p>
+            <!-- <div class="half-row-2">
+                                <img class="img-33" style="padding: 0 0;" src="images/usability testing.png">
+                            
+                              </div> -->
+
+            <div class="row-mocks" style="flex-direction: column; margin-top: 40px; margin-bottom: 40px;">
+              <video class="img-33 prototype-mask" controls style="padding: 0 0; width: 99.5%;">
+                <source src="images/adobe prototype video.mp4" type="video/mp4">
+              </video>
+            </div>
+
+
+
+
+          </section>
+
+          <section data-aos="fade-down" id="side-projects">
+            <!-- <hr style="margin-bottom: 70px; height:0.5px;"> -->
+            <h3>💼️ SIDE PROJECTS</h3>
+            <h2>
+              Besides redesigning the viz builder, <br>
+              I also worked on a couple smaller projects: <br>
+              <span class="highlight-text2">PDF Print Previews</span> & <span class="highlight-text2">Accessible Drag &
+                Drop.</span>
+            </h2>
+            <p>
+              I didn’t spend much time on these since they were either bite-sized or purely conceptual, but they were
+              still fun to
+              take on outside of my main internship project!
+              <br>
+              <br>
+              <br>
+              The first of these was a <span class="bold highlight-text-p">print dialog for analysts to print their
+                charts for physical reports</span> (surprisingly common for
+              their line of work, even in an online world!).
+              <br>
+              <br>
+              While analysts might make lots of visualizations for their own use, they’d often need to collect
+              visualizations to tell
+              a narrative or provide a scoped view into a certain area for stakeholders or leads. But Analytics didn’t
+              have a print
+              preview or ability to select specific visualizations, so they’d have to print their entire
+              workspace--terrible
+              formatting and all--and then physically cut out the charts they needed.
+            </p>
+            <div class="row-mocks" style="flex-direction: column; margin-top: 60px; margin-bottom: 60px;">
+              <img class="img-33" src="images/pdf preview.png">
+
+            </div>
+            <p>
+              The second project was <span class="bold highlight-text-p">an accessibility feature, helping users who
+                have trouble using a mouse navigate dragging &
+                dropping elements into visualizations.</span>
+              <br>
+              <br>
+
+              Vanilla Analytics requires a lot of dragging specific elements from a long list in the left rail over to
+              the central
+              workspace, but using a mouse isn’t easy for everyone. What if there was a way to do everything with just a
+              keyboard?
+              <br>
+              <br>
+              I took inspiration from the way screen readers progress through the hierarchy of a page, starting from a
+              page’s big
+              sections that users can select to dive deeper into the sub-components. I also took inspiration from the
+              visual design of
+              macOS’s Spotlight for this concept!
+
+
+            </p>
+            <div class="row-mocks" style="flex-direction: column; margin-top: 60px; margin-bottom: 0px;">
+              <img class="img-33" src="images/accessible.png">
+
+            </div>
+            <!-- <div class="half-row-2">
+                                  <img class="img-33" style="padding: 0 0;" src="images/usability testing.png">
+                              
+                                </div> -->
+
+          </section>
+
+          <section data-aos="fade-down" id="next-steps">
+            <h3>👋️ NEXT STEPS</h3>
+            <h2>
+              After 3 months on the team and 1 Adobe XD pillow,
+              it was time to say goodbye to Analytics.
+            </h2>
+            <p>
+              It was a challenging summer diving into the wide and unknown world of data analytics, but <span
+                class="bold highlight-text-p">I learned so much about how
+                complex enterprise products can be, and how even more complex it can be to design them in an easy,
+                user-friendly way!</span> It
+              was my first time tackling more complex interactions like hover states, right clicks, and drag & drops,
+              and it was a
+              blast to see how many features you can fit into one minimal-looking builder.
+              <br>
+              <br>
+              (As for the outcome of these designs, although I think our engineers intended to build them, I’m not
+              entirely sure if
+              they ever made it to prod in actuality!)
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="parent">
+      <div class="closing" data-aos="fade-down">
+        <hr>
+        <div>
+          <div style="padding-top:30px; letter-spacing: 0.48px; width: fit-content;">
+
+            Thanks for reading! <span><img src="images/hi.png" id="hi-sparkle"></span></div>
+          <div id="lookingfor">
+            Looking for more?
+          </div>
+
+          <div class="half-row-3">
+            <div class="column-33" data-aos="fade-down">
+              <div style="position: relative;">
+                <img class="flourishes" id="right-sparkle" src="images/right sparkle.png">
+                <img class="flourishes" style="bottom:-13px; right: -35px; width: 85px;" src="images/fb flourish.png">
+                <a href="http://www.kimhuynh.net/marketplace/">
+
+                  <img class="img-33" src="images/new marketplace mocks.png">
+                </a>
+              </div>
+              <div style="padding: 0 20px;">
+                <a href="http://www.kimhuynh.net/marketplace/" class="header-33-2 float-4">Facebook
+                  <div style="display:inline-block; vertical-align: middle;" class="new-arrow"><img
+                      style="margin-left: 2px; padding-bottom: 4px;" src="images/new arrow.svg"></div>
+                </a>
+                <div class="body-33-2">As a designer on Marketplace, I helped sellers succeed with promotions and
+                  incentives</div>
+              </div>
+            </div>
+
+            <div class="column-33" data-aos="fade-down" data-aos-delay="200">
+              <div style="position: relative;">
+                <img class="flourishes" id="left-sparkle" src="images/left sparkle.png">
+                <img class="flourishes" style="bottom:-12px; right: -18px; width: 72px;"
+                  src="images/storia flourish.png">
+                <a href="http://www.kimhuynh.net/storia/">
+
+                  <img class="img-33" src="images/new storia mocks.png">
+                </a>
+              </div>
+
+              <div style="padding: 0 20px;">
+                <a href="http://www.kimhuynh.net/storia/" class="header-33-2 float-4">Storia
+                  <div style="display:inline-block; vertical-align: middle;" class="new-arrow"><img
+                      style="margin-left: 2px; padding-bottom: 4px;" src="images/new arrow.svg"></div>
+                </a>
+                <div class="body-33-2">I designed a journaling app concept to inspire busy people to write
+                </div>
+              </div>
+            </div>
+
+
+            <div class="column-33" data-aos="fade-down" style="margin-right: 0;" data-aos-delay="400">
+              <div style="position: relative;">
+                <img class="flourishes" id="right-sparkle" src="images/right sparkle.png">
+                <img class="flourishes" style="bottom:-5px; right: -38px; width: 90px;"
+                  src="images/empactful flourish.png">
+                <a href="http://www.kimhuynh.net/empactful/">
+
+                  <img class="img-33" src="images/new empactful mocks.png">
+                </a>
+              </div>
+              <div style="padding: 0 20px;">
+                <a href="http://www.kimhuynh.net/empactful/" class="header-33-2 float-4">Empactful
+                  <div style="display:inline-block; vertical-align: middle;" class="new-arrow"><img
+                      style="margin-left: 2px; padding-bottom: 4px;" src="images/new arrow.svg"></div>
+                </a>
+                <div class="body-33-2">In uni, I designed for a student-made fintech startup focused on investing in
+                  social good
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <div><button class="float-3 scroll-top"><img src="images/top.svg"></button></div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 80, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1250, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+      });
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () { AOS.refresh(); }, 500);
+      });
+
+
+
+
+      var scrollToTopBtn = document.querySelector(".scroll-top");
+      // var tableofcontents = document.querySelector(".toc");
+      var rootElement = document.documentElement;
+
+      function handleScroll() {
+        // Do something on scroll
+        var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+        if (rootElement.scrollTop / scrollTotal > 0.05) {
+          // Show button
+          scrollToTopBtn.classList.add("showBtn");
+          // tableofcontents.classList.add("showBtn");
+        } else {
+          // Hide button
+          scrollToTopBtn.classList.remove("showBtn");
+          // tableofcontents.classList.remove("showBtn");
+        }
+      }
+
+      function scrollToTop() {
+        // Scroll to top logic
+        rootElement.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+      scrollToTopBtn.addEventListener("click", scrollToTop);
+      document.addEventListener("scroll", handleScroll);
+
+
+
+
+      //   let options = {
+      //     // rootMargin: '5px 10px', // works just like margin on element
+      //     threshold: 0.3 // when ~90% of element is visible, trigger IO
+      //   }
+
+      //   let observer = new IntersectionObserver(callback, options); // trigger callback function when provided options match for an element
+      //   let targets = document.querySelectorAll('.highlight-text-p'); // you want to watch multiple elements with inactive class
+      //     targets.forEach(target => { // loop through your elements
+      //       observer.observe(target); // observe them
+      //     });
+
+      // // the callback we setup for the observer will be executed now for the first time
+      // // it waits until we assign a target to our observer (even if the target is currently not visible)
+
+      //   let callback = (entries, observer) => {
+      //     entries.forEach(entry => {
+      //       // Each entry describes an intersection change for one observed
+      //       // target element:
+      //       //   entry.boundingClientRect...
+      //       // Your .inactive element is in viewport.
+      //        if (entry.isIntersecting) {
+      //           // Show button
+      //           entry.boundingClientRect.classList.add("highlight-text-p-animate");
+      //         }
+      //     });
+      //   };
+
+
+
+
+
+      //     // We select the element we want to target
+      // var target = document.querySelector(".scroll-top-container");
+
+      // var scrollToTopBtn = document.querySelector(".scroll-top");
+      // var rootElement = document.documentElement;
+
+      // // Next we want to create a function that will be called when that element is intersected
+      // function callback(entries, observer) {
+      //   // The callback will return an array of entries, even if you are only observing a single item
+      //   entries.forEach((entry) => {
+      //     if (entry.isIntersecting) {
+      //       // Show button
+      //       scrollToTopBtn.classList.add("showBtn");
+      //     } else {
+      //       // Hide button
+      //       scrollToTopBtn.classList.remove("showBtn");
+      //     }
+      //   });
+      // }
+
+      // function scrollToTop() {
+      //   rootElement.scrollTo({
+      //     top: 0,
+      //     behavior: "smooth"
+      //   });
+      // }
+      // scrollToTopBtn.addEventListener("click", scrollToTop);
+
+      // // Next we instantiate the observer with the function we created above. This takes an optional configuration
+      // // object that we will use in the other examples.
+      // let observer = new IntersectionObserver(callback);
+      // // Finally start observing the target element
+      // observer.observe(target);
+
+
+
+
+
+      // array of the links in the toc (table of content) block
+      var toc;
+      // array of content (links are refers to the content)
+      var content = [];
+
+      // call prepare function for while page is loaded complete
+      document.addEventListener('DOMContentLoaded', function () {
+        prepare();
+        sync();
+      }, false);
+
+      /**
+       * this function get all toc (table of content) links and content 
+       * and save theme
+       */
+      function prepare() {
+        // get all toc (table of content) links
+        toc = document.querySelectorAll('.toc a');
+        let targets = document.querySelectorAll('.highlight-text-p');
+        // get content so that link refer to it
+        toc.forEach(function (link) {
+          var id = link.getAttribute("href");
+          var element = document.querySelector(id);
+          content.push(element);
+        });
+        // sync toc (table of content) whit part of content that is 
+        // visible into viewport while user scroll
+        window.addEventListener("scroll", sync, false);
+      }
+
+
+      /**
+       * this function check if element is visible in viewport 
+       * 
+       * @argument {String} element which we need to check it 
+       * @returns true if element is visible in viewport else return false 
+       */
+      function isElementInViewport(element) {
+        // get element position
+        var rect = element.getBoundingClientRect();
+
+        // return true if a partial of the element is visible
+        return (rect.bottom >= 0 &&
+          rect.top <= (window.innerHeight || document.documentElement.clientHeight));
+
+        // for while we need check if all off the element is visible in viewport
+        // return (rect.top >= 0 &&
+        //     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight));
+      }
+
+      /**
+       * this function highlight toc (table of content) links which is visible in viewport
+       */
+      function sync() {
+        // check all content 
+        for (var i = 0; i < content.length; i++) {
+          // if content is visible if viewport highlight it 
+          // else remove highlight from it
+          if (isElementInViewport(content[i])) {
+            // toc[i].classList.add('highlight');
+            toc[i].setAttribute("id", "highlight");
+          } else {
+            // toc[i].classList.remove('highlight');
+            toc[i].removeAttribute("id", "highlight");
+          }
+        }
+      }
+
+      var child1 = document.querySelector(".placeholder");
+      var child2 = document.querySelector(".contents");
+      var parent = document.getElementById("parent");
+      var test = document.querySelector(".testing");
+      var nav = document.querySelector(".toc");
+
+      // var childHeight = parseInt(window.getComputedStyle(child2).height) + "px";
+      var navWidth = (parseInt(window.getComputedStyle(nav).width) + 40) + "px";
+      var navHeight = parseInt(window.getComputedStyle(nav).height);
+      // child1.style.paddingTop = childHeight;
+      test.style.paddingLeft = navWidth;
+      test.style.paddingRight = navWidth;
+      test.style.marginTop = (0 - navHeight) + "px";
+
+
+
+
+      //       let options = {
+      //   rootMargin: 0, // works just like margin on element
+      //   threshold: 0.5 // when ~90% of element is visible, trigger IO
+      // }
+
+
+
+      // the callback we setup for the observer will be executed now for the first time
+      // it waits until we assign a target to our observer (even if the target is currently not visible)
+
+
+      // let callback = (entries, observer) => {
+      //   entries.forEach(entry => {
+      //     // Each entry describes an intersection change for one observed
+      //     // target element:
+      //     //   entry.boundingClientRect...
+      //     // Your .inactive element is in viewport.
+      //      if (entry.isIntersecting) {
+      //         // Show button
+      //         entry.classList.add("highlight-text-p-animate");
+      //       }
+      //   });
+      // };
+
+      //       let observer = new IntersectionObserver(callback); // trigger callback function when provided options match for an element
+
+      //           let targets = document.querySelectorAll('.highlight-text-p'); // you want to watch multiple elements with inactive class
+      //           targets.forEach(target => { // loop through your elements
+      //             observer.observe(target); // observe them
+      //           });
+
+      const inViewport = (entries, observer) => {
+        entries.forEach(entry => {
+          entry.target.classList.toggle("highlight-text2-animate", entry.isIntersecting);
+        });
+      };
+
+      const inViewport2 = (entries, observer) => {
+        entries.forEach(entry => {
+          entry.target.classList.toggle("highlight-text-p-animate", entry.isIntersecting);
+        });
+      };
+
+      const Obs = new IntersectionObserver(inViewport);
+      const Obs2 = new IntersectionObserver(inViewport2);
+      const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+
+      // Attach observer to every [data-inviewport] element:
+      document.querySelectorAll('.highlight-text2').forEach(el => {
+        Obs.observe(el, obsOptions);
+      });
+
+      document.querySelectorAll('.highlight-text-p').forEach(el => {
+        Obs2.observe(el, obsOptions);
+      });
+
+    </script>
+</body>
+
+</html>
